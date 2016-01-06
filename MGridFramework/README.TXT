@@ -1,15 +1,15 @@
 _____________________________________________________________________________
 v0.1
 
-Funcionamento:
-- Resource é um recurso na rede e espera por requisições na porta 12399
-- Broker conecta e envia um objeto GridJob para ser executado
-- Resource executa e envia a resposta
-- 1 Conexão do Broker envia 1 lista de Jobs para executar
-- 1 Conexão de resposta do Resource envia uma lista de resposta ordenados respectivamente a cada job
+How does it works:
+- Resource is a representation from a network resource (Android device) it waits for requests by default on port 12399
+- Broker send a GridJob object to be executed
+- Resource executes and replies
+- 1 Connection Broker sends a list of jobs to be executed
+- 1 Connection Resource sends a list of replies ordered for each job
 
-Para utilizar o Middleware:
-- Criar objetos GridJob que serão distribuidos no grid
-- Utilizar o método dispatchJobs da classe Broker para enviar os Jobs e aguardar a resposta
-- Se não houver exceções utilizar o método getReplies para receber as resopstas na ordem enviada
+How to usethe Middleware:
+- Implement GridJobs objects to be executed
+- Use method dispatchJobs from Broker to send Jobs and waits for an answer
+- If there are no exceptions use getReplies to get the ordered answer list
 _____________________________________________________________________________
