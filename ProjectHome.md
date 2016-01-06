@@ -1,0 +1,2 @@
+This project is a middleware for scientific computing supporting mobile devices(Android only), such as smartphones and tablets.
+Also, the middleware can be used in a heterogeneous environment as long as all nodes run a Java Virtual Machine
